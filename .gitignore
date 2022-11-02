@@ -114,3 +114,5 @@ API
 Training
 Blog
 About
+!*.dll
+!*.obj
