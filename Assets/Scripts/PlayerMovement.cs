@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;
+    public float moveSpeed = 3f;
+    private float degrees = 180;
 
     private Rigidbody2D rb;
     private Animator anim;
-    private SpriteRenderer sprite;
+    Vector2 movement;
 
     private States State
     {
@@ -19,18 +20,25 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        sprite = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
     private void Run()
     {
         State = States.run;
-        Vector3 dir_x = transform.right * Input.GetAxisRaw("Horizontal");
-        Vector3 dir_y = transform.up * Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        transform.position = Vector3.MoveTowards(transform.position, transform.position + dir_x + dir_y, speed * Time.deltaTime);
-        sprite.flipX = dir_x.x < 0.0f;
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        Flip();
+    }
+
+    private void Flip()
+    {
+        degrees = movement.x < 0f?180:0;
+        Vector3 rotate = transform.eulerAngles;
+        rotate.y = degrees;
+        transform.rotation = Quaternion.Euler(rotate);
     }
 
     private void FixedUpdate()

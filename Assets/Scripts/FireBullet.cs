@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireBullet : MonoBehaviour
 {
-    public float _delta = 5;
+    public float _delta = 1;
     public GameObject bulletPrefab;
     public Transform firePoint;
  
@@ -16,7 +16,7 @@ public class FireBullet : MonoBehaviour
             if (_delta <= 0)
             {
                 Shoot();  
-                _delta = 5;
+                _delta = 1;
             }
         } 
     }

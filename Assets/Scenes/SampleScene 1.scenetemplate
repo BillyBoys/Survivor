@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SampleScene 1
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 2800000, guid: 4cf7b6139fedcb54294048f1d80d35b4, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: d89662c6c4a386242840a8e75189af23, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 4cf2dbc4b61ce3145b0528c83cb3f7e8, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 7cc6dd632f5cfde4d8c1064a381e7992, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 9100000, guid: 2bda4be74f6120345b206abbe048e957, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 6c0d2947fe3e69645a4dc5614fb6580c, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 1305590037133225245, guid: 69bc8f8fab1c7c9439608316c0de20e8, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: e998e5cff7c373b4b844480c3d286826, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 9100000, guid: 34da8aa900bde254ab5e6be6374dc8c1, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 7002baa32f30b1e45b8ce1a830ee4250, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: cdedc13d64421b94b859716195d9fc34, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: dc72a8d15b6c9794aa663ab246442945, type: 2}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  addToDefaults: 0
